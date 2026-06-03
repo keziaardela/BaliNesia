@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bgonboarding2"
+        android:scaleType="centerCrop" />
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <!-- Logo Besar -->
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/logo2"
+            android:scaleType="fitCenter" />
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jelajahi Destinasi&#10;Terbaik di Bali"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:layout_marginTop="15dp" />
+
+        <!-- Deskripsi -->
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:text="Informasi lengkap, akurat, dan selalu update untuk perjalananmu."
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:fontFamily="@font/montserratsemibold"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <!-- Spacer -->
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="80dp" />
+
+        <!-- Tombol Lanjut -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLanjut"
+            android:layout_width="260dp"
+            android:layout_height="58dp"
+            android:text="Lanjut"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserratsemibold"
+            android:background="@drawable/button_lanjut"
+            android:layout_marginTop="60dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splashbg"
+        android:scaleType="centerCrop"
+        android:contentDescription="Splash Background"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BaliNesia"
+            android:textColor="#FFFFFF"
+            android:textSize="52sp"
+            android:fontFamily="@font/alata"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temukan keindahan Bali&#10;dalam satu aplikasi"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserratsemibold"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
