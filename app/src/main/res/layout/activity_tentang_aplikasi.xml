@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Tentang Aplikasi"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        app:tint="#000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BaliNesia"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/montserratsemibold"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Versi 1.0"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temukan Keindahan Bali dalam Genggaman"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:fontFamily="@font/montserratsemibold"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BaliNesia adalah aplikasi rekomendasi wisata yang membantu pengguna menemukan destinasi terbaik di Bali. Aplikasi ini menyediakan informasi tempat wisata populer, destinasi favorit, serta membantu wisatawan merencanakan perjalanan dengan lebih mudah."
+                android:textSize="14sp"
+                android:justificationMode="inter_word"
+                android:textColor="#555555"
+                android:fontFamily="@font/montserratmedium"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 👥 Tim Pengembang"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserratsemibold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="2405551116 - Tania Gracia Siwalette"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserratlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="2405551113 - Kezia Ardela Pinem"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserratlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="2405551048 - Margaret Nuarimabel Siburian"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserratlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="2405551118 - Kendra Aurellia Renata"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserratlight"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="© 2026 BaliNesia"
+                android:textSize="12sp"
+                android:textColor="#999999"
+                android:fontFamily="@font/montserratmedium"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Universitas Udayana"
+                android:textSize="12sp"
+                android:textColor="#999999"
+                android:fontFamily="@font/montserratmedium"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

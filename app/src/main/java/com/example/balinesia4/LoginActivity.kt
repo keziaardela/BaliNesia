@@ -34,10 +34,10 @@ class LoginActivity : AppCompatActivity() {
         btnMasuk.setOnClickListener {
 
             val username =
-                etUsername.text.toString()
+                etUsername.text.toString().trim()
 
             val password =
-                etPassword.text.toString()
+                etPassword.text.toString().trim()
 
             val berhasil =
                 db.loginUser(
@@ -53,12 +53,18 @@ class LoginActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
 
-                startActivity(
+                val intent =
                     Intent(
                         this,
                         MainActivity::class.java
                     )
+
+                intent.putExtra(
+                    "username",
+                    username
                 )
+
+                startActivity(intent)
 
                 finish()
 
