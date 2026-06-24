@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BaliNesia4">
         <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoBotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TripActivity"
+            android:exported="false" />
+        <activity
             android:name=".OnboardingActivity"
             android:exported="false" />
         <activity
@@ -26,7 +35,6 @@
         <activity
             android:name=".SplashActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,15 +44,12 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-
         <activity
             android:name=".ProfileActivity"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".PengaturanAkunActivity"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".TentangAplikasiActivity"
             android:exported="false" />

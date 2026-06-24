@@ -1,393 +1,333 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#FFFFFF"
-    android:fitsSystemWindows="true">
+    android:layout_height="match_parent">
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:fillViewport="true">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:fitsSystemWindows="true">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:paddingTop="35dp"
-            android:paddingBottom="10dp">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
 
-            <!-- TITLE -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="BaliNesia"
-                android:textSize="26sp"
-                android:textStyle="bold"
-                android:textColor="#000000"/>
-
-            <!-- SEARCH BAR -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="58dp"
-                android:layout_marginTop="22dp"
-                app:cardCornerRadius="30dp"
-                app:cardElevation="2dp"
-                app:cardBackgroundColor="#F7F7F7">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp">
-
-                    <ImageView
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:src="@android:drawable/ic_menu_search"/>
-
-                    <EditText
-                        android:id="@+id/etSearch"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:background="@android:color/transparent"
-                        android:hint="Cari destinasi wisata..."
-                        android:textSize="15sp"/>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- POPULAR -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Popular"
-                android:textStyle="bold"
-                android:textSize="24sp"
-                android:textColor="#000000"
-                android:layout_marginTop="32dp"/>
-
-            <!-- POPULAR CARD -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginTop="16dp"
-                app:cardCornerRadius="28dp"
-                app:cardElevation="6dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <!-- IMAGE -->
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/pantai_kelingking"
-                        android:scaleType="centerCrop"/>
-
-                    <!-- DARK OVERLAY -->
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#55000000"/>
-
-                    <!-- FAVORITE -->
-                    <ImageView
-                        android:layout_width="42dp"
-                        android:layout_height="42dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_margin="18dp"
-                        android:background="@drawable/circle_white"
-                        android:padding="10dp"
-                        android:src="@android:drawable/btn_star_big_on"/>
-
-                    <!-- TEXT -->
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_alignParentBottom="true"
-                        android:padding="22dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Pantai Kelingking"
-                            android:textColor="#FFFFFF"
-                            android:textStyle="bold"
-                            android:textSize="28sp"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Nusa Penida, Bali"
-                            android:textColor="#FFFFFF"
-                            android:textSize="16sp"
-                            android:layout_marginTop="4dp"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="⭐ 4.8 (1200+)"
-                            android:textColor="#FFFFFF"
-                            android:textSize="15sp"
-                            android:layout_marginTop="8dp"/>
-
-                    </LinearLayout>
-
-                </RelativeLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- RECOMMENDED -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:layout_marginTop="34dp">
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="35dp"
+                android:paddingBottom="130dp">
 
+                <!-- TITLE -->
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Recommended"
+                    android:text="BaliNesia"
+                    android:textSize="26sp"
                     android:textStyle="bold"
-                    android:textSize="24sp"
                     android:textColor="#000000"/>
 
+                <!-- SEARCH BAR -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="22dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="#F7F7F7">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@android:drawable/ic_menu_search"/>
+
+                        <EditText
+                            android:id="@+id/etSearch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Cari destinasi wisata..."
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- POPULAR -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lihat Semua"
-                    android:textColor="#3B82F6"
-                    android:textStyle="bold"/>
-            </LinearLayout>
+                    android:text="Popular"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="32dp"/>
 
-            <!-- HORIZONTAL DESTINATION -->
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scrollbars="none"
-                android:layout_marginTop="18dp">
+                <!-- POPULAR CARD -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardKelingking"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="16dp"
+                    app:cardCornerRadius="28dp"
+                    app:cardElevation="6dp">
 
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!-- IMAGE -->
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/pantai_kelingking"
+                            android:scaleType="centerCrop"/>
+
+                        <!-- DARK OVERLAY -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#55000000"/>
+
+                        <!-- FAVORITE -->
+                        <ImageView
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="18dp"
+                            android:background="@drawable/circle_white"
+                            android:padding="10dp"
+                            android:src="@android:drawable/btn_star_big_on"/>
+
+                        <!-- TEXT -->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentBottom="true"
+                            android:padding="22dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pantai Kelingking"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:textSize="28sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nusa Penida, Bali"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:layout_marginTop="4dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="⭐ 4.8 (1200+)"
+                                android:textColor="#FFFFFF"
+                                android:textSize="15sp"
+                                android:layout_marginTop="8dp"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- RECOMMENDED -->
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="34dp">
 
-                    <!-- CARD 1 -->
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="170dp"
-                        android:layout_height="240dp"
-                        android:layout_marginEnd="16dp"
-                        app:cardCornerRadius="22dp"
-                        app:cardElevation="4dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Recommended"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="#000000"/>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="140dp"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/pura_ulun_danu_bratan"/>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:padding="12dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Pura Ulun Danu"
-                                    android:textStyle="bold"
-                                    android:textSize="17sp"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Tabanan, Bali"
-                                    android:textColor="#777777"
-                                    android:textSize="13sp"
-                                    android:layout_marginTop="4dp"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="⭐ 4.6"
-                                    android:textSize="13sp"
-                                    android:layout_marginTop="8dp"/>
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <!-- CARD 2 -->
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="170dp"
-                        android:layout_height="240dp"
-                        android:layout_marginEnd="16dp"
-                        app:cardCornerRadius="22dp"
-                        app:cardElevation="4dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="140dp"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/tegalalang"/>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:padding="12dp">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Tegalalang"
-                                    android:textStyle="bold"
-                                    android:textSize="17sp"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Ubud, Bali"
-                                    android:textColor="#777777"
-                                    android:textSize="13sp"
-                                    android:layout_marginTop="4dp"/>
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="⭐ 4.7"
-                                    android:textSize="13sp"
-                                    android:layout_marginTop="8dp"/>
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Semua"
+                        android:textColor="#3B82F6"
+                        android:textStyle="bold"/>
                 </LinearLayout>
 
-            </HorizontalScrollView>
+                <!-- HORIZONTAL DESTINATION -->
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginTop="18dp">
 
-        </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-    </ScrollView>
+                        <!-- CARD 1 -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardUlunDanu"
+                            android:layout_width="170dp"
+                            android:layout_height="240dp"
+                            android:layout_marginEnd="16dp"
+                            app:cardCornerRadius="22dp"
+                            app:cardElevation="4dp">
 
-    <!-- BOTTOM NAVIGATION -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="72dp"
-        android:background="#FFFFFF"
-        android:elevation="10dp"
-        android:orientation="horizontal"
-        android:gravity="center">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="140dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/pura_ulun_danu_bratan"/>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_home"
-                />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="12dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Home"
-                android:textSize="12sp"/>
-        </LinearLayout>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Pura Ulun Danu"
+                                        android:textStyle="bold"
+                                        android:textSize="17sp"/>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tabanan, Bali"
+                                        android:textColor="#777777"
+                                        android:textSize="13sp"
+                                        android:layout_marginTop="4dp"/>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_search"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="⭐ 4.6"
+                                        android:textSize="13sp"
+                                        android:layout_marginTop="8dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Search"
-                android:textSize="12sp"/>
-        </LinearLayout>
+                                </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+                            </LinearLayout>
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_trip"/>
+                        </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Trip"
-                android:textSize="12sp"/>
-        </LinearLayout>
+                        <!-- CARD 2 -->
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardTegalalang"
+                            android:layout_width="170dp"
+                            android:layout_height="240dp"
+                            android:layout_marginEnd="16dp"
+                            app:cardCornerRadius="22dp"
+                            app:cardElevation="4dp">
 
-        <LinearLayout
-            android:id="@+id/menuProfile"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_profile"/>
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="140dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/tegalalang"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Profile"
-                android:textSize="12sp"/>
-        </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:padding="12dp">
 
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Tegalalang"
+                                        android:textStyle="bold"
+                                        android:textSize="17sp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Ubud, Bali"
+                                        android:textColor="#777777"
+                                        android:textSize="13sp"
+                                        android:layout_marginTop="4dp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="⭐ 4.7"
+                                        android:textSize="13sp"
+                                        android:layout_marginTop="8dp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
-</LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:minHeight="70dp"
+        android:background="@android:color/white"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:menu="@menu/bottom_nav_menu"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabGoBot"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="95dp"
+        android:src="@drawable/ic_bot"
+        app:backgroundTint="#4AA9FF"
+        app:tint="#FFFFFF"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
