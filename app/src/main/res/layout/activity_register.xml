@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
+    android:gravity="center"
     android:background="#FFFFFF"
     android:padding="24dp">
 
+    <!-- LOGO -->
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="40dp"
         android:src="@drawable/logo"
-        app:tint="#000000"
-        android:scaleType="fitCenter" />
+        android:scaleType="fitCenter"
+        app:tint="#000000" />
 
+    <!-- TITLE -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,74 +26,92 @@
         android:textColor="#000000"
         android:textSize="30sp"
         android:fontFamily="@font/alata"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp" />
 
+    <!-- EMAIL -->
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="300dp"
         android:layout_height="55dp"
-        android:layout_marginTop="40dp"
-        android:textSize="16sp"
+        android:layout_marginTop="20dp"
         android:hint="Masukkan Email"
+        android:textSize="16sp"
+        android:textColor="#222222"
+        android:textColorHint="#9E9E9E"
+        android:textStyle="bold"
         android:fontFamily="@font/montserrat"
         android:background="@drawable/button_white"
-        android:padding="15dp"/>
+        android:padding="15dp" />
 
+    <!-- USERNAME -->
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_marginTop="15dp"
-        android:textSize="16sp"
         android:hint="Masukkan Username"
+        android:textSize="16sp"
+        android:textColor="#222222"
+        android:textColorHint="#9E9E9E"
+        android:textStyle="bold"
         android:fontFamily="@font/montserrat"
         android:background="@drawable/button_white"
-        android:padding="15dp"/>
+        android:padding="15dp" />
 
+    <!-- PASSWORD -->
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_marginTop="15dp"
-        android:textSize="16sp"
         android:hint="Masukkan Password"
+        android:textSize="16sp"
+        android:textColor="#222222"
+        android:textColorHint="#9E9E9E"
+        android:textStyle="bold"
         android:fontFamily="@font/montserrat"
         android:inputType="textPassword"
         android:background="@drawable/button_white"
-        android:padding="15dp"/>
+        android:padding="15dp" />
 
+    <!-- CONFIRM PASSWORD -->
     <EditText
         android:id="@+id/etKonfirmasi"
         android:layout_width="300dp"
         android:layout_height="55dp"
         android:layout_marginTop="15dp"
-        android:textSize="16sp"
         android:hint="Konfirmasi Password"
+        android:textSize="16sp"
+        android:textColor="#222222"
+        android:textColorHint="#9E9E9E"
         android:fontFamily="@font/montserrat"
         android:inputType="textPassword"
         android:background="@drawable/button_white"
-        android:padding="15dp"/>
+        android:padding="15dp" />
 
+    <!-- BUTTON DAFTAR -->
     <Button
         android:id="@+id/btnDaftar"
         android:layout_width="300dp"
         android:layout_height="55dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="30dp"
         android:text="Daftar"
         android:textAllCaps="false"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:fontFamily="@font/alata"
-        android:textColor="#000000"
-        android:background="@drawable/button_white"
-        android:backgroundTint="@null"/>
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4AA9FF" />
 
+    <!-- LOGIN -->
     <TextView
         android:id="@+id/txtMasuk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sudah punya akun? Masuk"
-        android:textColor="#4A90E2"
+        android:textColor="#4AA9FF"
+        android:textStyle="bold"
         android:textSize="14sp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp" />
 
 </LinearLayout>

@@ -7,58 +7,67 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:padding="24dp">
 
+    <!-- LOGO -->
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:src="@drawable/logo"
-        app:tint="#000000"
-        android:scaleType="fitCenter"/>
+        android:scaleType="fitCenter"
+        app:tint="#000000"/>
 
+    <!-- TITLE -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Selamat Datang!"
-        android:fontFamily="@font/alata"
+        android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="#000000"
-        android:layout_marginTop="20dp"/>
+        android:fontFamily="@font/alata"/>
 
+    <!-- SUBTITLE -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
         android:text="Masuk untuk melanjutkan&#10;petualanganmu"
-        android:fontFamily="@font/montserratsemibold"
         android:textColor="#7A7A7A"
         android:textSize="14sp"
-        android:gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:fontFamily="@font/montserratsemibold"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <!-- BUTTON MASUK -->
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnMasuk"
         android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/button_white"
-        android:backgroundTint="@null"
+        android:layout_height="56dp"
+        android:layout_marginTop="70dp"
         android:text="Masuk"
         android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
         android:fontFamily="@font/alata"
-        android:textColor="#000000" />
+        android:backgroundTint="#2196F3"
+        app:cornerRadius="30dp"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <!-- BUTTON DAFTAR -->
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnDaftar"
         android:layout_width="300dp"
-        android:layout_height="60dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
         android:text="Daftar"
         android:textAllCaps="false"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
         android:fontFamily="@font/alata"
-        android:textColor="#000000"
-        android:background="@drawable/button_white"
-        android:backgroundTint="@null"
-        android:layout_marginTop="20dp"/>
+        android:backgroundTint="#FFFFFF"
+        app:cornerRadius="30dp"
+        app:strokeColor="#2196F3"
+        app:strokeWidth="1dp"/>
 
 </LinearLayout>

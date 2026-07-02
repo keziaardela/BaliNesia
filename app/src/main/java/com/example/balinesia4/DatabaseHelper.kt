@@ -27,7 +27,6 @@ class DatabaseHelper(context: Context) :
 
         db.execSQL("DROP TABLE IF EXISTS users")
         onCreate(db)
-
     }
 
     fun registerUser(
@@ -67,5 +66,87 @@ class DatabaseHelper(context: Context) :
         cursor.close()
 
         return berhasil
+    }
+
+    fun getEmail(
+        username: String
+    ): String {
+
+        val db = readableDatabase
+
+        val cursor = db.rawQuery(
+            "SELECT email FROM users WHERE username=?",
+            arrayOf(username)
+        )
+
+        var email = ""
+
+        if (cursor.moveToFirst()) {
+            email = cursor.getString(0)
+        }
+
+        cursor.close()
+
+        return email
+    }
+
+    fun updateUser(
+        usernameLama: String,
+        usernameBaru: String,
+        emailBaru: String
+    ): Boolean {
+
+        val db = writableDatabase
+
+        val values = ContentValues()
+
+        values.put("username", usernameBaru)
+        values.put("email", emailBaru)
+
+        val result = db.update(
+            "users",
+            values,
+            "username=?",
+            arrayOf(usernameLama)
+        )
+
+        return result > 0
+    }
+
+    fun deleteUser(
+        username: String
+    ): Boolean {
+
+        val db = writableDatabase
+
+        val result = db.delete(
+            "users",
+            "username=?",
+            arrayOf(username)
+        )
+
+        return result > 0
+    }
+
+    fun getUserEmail(
+        username: String
+    ): String {
+
+        val db = readableDatabase
+
+        val cursor = db.rawQuery(
+            "SELECT email FROM users WHERE username=?",
+            arrayOf(username)
+        )
+
+        var email = ""
+
+        if (cursor.moveToFirst()) {
+            email = cursor.getString(0)
+        }
+
+        cursor.close()
+
+        return email
     }
 }
