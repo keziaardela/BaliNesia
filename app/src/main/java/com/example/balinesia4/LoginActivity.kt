@@ -56,7 +56,7 @@ class LoginActivity : AppCompatActivity() {
                 val intent =
                     Intent(
                         this,
-                        DashboardActivity::class.java
+                        MainActivity::class.java
                     )
 
                 intent.putExtra(
